@@ -13,13 +13,22 @@ export default function HomePage() {
 
   return (
     <>
-      {/* === META TAGS PER FACEBOOK / SEO === */}
+      {/* === META TAGS FACEBOOK / SEO === */}
       <Head>
+        {/* META VERIFICA DOMINIO FACEBOOK */}
+        <meta
+          name="facebook-domain-verification"
+          content="m0q10ed41llq920x0znso4v0l3yfg3" // ⬅️ sostituisci con il tuo codice reale
+        />
+
+        {/* SEO BASE */}
         <title>Tekkin — Platform for Minimal / Tech House Producers</title>
         <meta
           name="description"
           content="Tekkin is a platform supporting Minimal and Tech House producers with mastering, Spotlight analytics, and mentorship. Powered by Davide Marsala."
         />
+
+        {/* OPEN GRAPH */}
         <meta property="og:title" content="Tekkin" />
         <meta
           property="og:description"
@@ -29,6 +38,9 @@ export default function HomePage() {
         <meta property="og:url" content="https://tekkin.it" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Tekkin" />
+
+        {/* FAVICON */}
+        <link rel="icon" href="/tekkin-logo.png" />
       </Head>
 
       <main className="relative min-h-screen bg-[#0b0b0b] text-zinc-200 flex flex-col items-center justify-center overflow-hidden">
